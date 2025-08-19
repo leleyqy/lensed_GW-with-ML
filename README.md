@@ -12,29 +12,29 @@
 
 - *lens_params.csv* ：
 
-透镜参数，共n_lens行，包含关键字 mu_0, mu_1, t_d
+    透镜参数，共n_lens行，包含关键字 mu_0, mu_1, t_d
 
 - *source_samples.csv* ：
 
-所有源参数（非透镜+透镜），共n_samples行，包含引力波15个参数的关键字
+    所有源参数（非透镜+透镜），共n_samples行，包含引力波15个参数的关键字
 
 - *lensed_index.csv* ：
 
-source_samples中被选取的透镜源的index，共n_lens行，包含关键字 lensed_index
+    source_samples中被选取的透镜源的index，共n_lens行，包含关键字 lensed_index
 
 - *lensed_source_samples.csv* ：
 
-透镜源参数（像1+像2），共2 * n_lens行，包含引力波15个参数的关键字。其中第0 ~ n_lens-1行为像1的参数，第n_lens ~ (2 * n_lens)-1 行为像2的参数，二者一一对应。
-（像1的参数就是source_samples中第lensed_index行对应的参数，像2的参数为伪源参数，t_2=t_1+t_d，其余参数与像1保持一致）
+    透镜源参数（像1+像2），共2 * n_lens行，包含引力波15个参数的关键字。其中第0 ~ n_lens-1行为像1的参数，第n_lens ~ (2 * n_lens)-1 行为像2的参数，二者一一对应。
+    （像1的参数就是source_samples中第lensed_index行对应的参数，像2的参数为伪源参数，t_2=t_1+t_d，其余参数与像1保持一致）
 
 - *All_unlensed_events_data.npz* ：
 
-source_samples中所有源的GW数据(whitened)，共n_samples行，包含关键字data_strain, time_array, optimal_SNR
-（注意，无论n_lens设置为多少，该文件都会包含n_samples个源的unlensed数据）
+    source_samples中所有源的GW数据(whitened)，共n_samples行，包含关键字data_strain, time_array, optimal_SNR
+    （注意，无论n_lens设置为多少，该文件都会包含n_samples个源的unlensed数据）
 
 - *lensed_events_data.npz* ：
 
-lensed_source_samples透镜像1+像2的GW数据(whitened)，共2*n_lens行，包含关键字data_strain, time_array, optimal_SNR
+    lensed_source_samples透镜像1+像2的GW数据(whitened)，共2*n_lens行，包含关键字data_strain, time_array, optimal_SNR
 
 
 以下序号对应于notebook内单元格
