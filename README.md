@@ -10,17 +10,17 @@
 
 运行完毕会得到文件：
 
-*lens_params.csv*：透镜参数，包含关键字 mu_0, mu_1, t_d
+- *lens_params.csv*：透镜参数，包含关键字 mu_0, mu_1, t_d
 
-*source_samples.csv*：源参数，包含引力波15个参数的关键字
+- *source_samples.csv*：源参数，包含引力波15个参数的关键字
 
-*lensed_index.csv*：透镜源index，包含关键字 lensed_index
+- *lensed_index.csv*：透镜源index，包含关键字 lensed_index
 
-*lensed_source_samples.csv*：透镜源参数，包含引力波15个参数的关键字
+- *lensed_source_samples.csv*：透镜源参数，包含引力波15个参数的关键字
 
-*unlensed_events_data.npz*：非透镜化GW数据(whitened)，包含关键字data_strain, time_array, optimal_SNR
+- *unlensed_events_data.npz*：非透镜化GW数据(whitened)，包含关键字data_strain, time_array, optimal_SNR
 
-*lensed_events_data.npz*：透镜化GW数据(whitened)，包含关键字data_strain, time_array, optimal_SNR
+- *lensed_events_data.npz*：透镜化GW数据(whitened)，包含关键字data_strain, time_array, optimal_SNR
 
 
 以下序号对应于notebook内单元格
